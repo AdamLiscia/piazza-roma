@@ -1,0 +1,230 @@
+{
+  "categories": [
+    {
+      "name": "Appetizers",
+      "items": [
+        {
+          "name": "Artisanal Cheese Board",
+          "description": "Selection of local and imported cheeses, honey, nuts, and artisanal bread",
+          "price": 18,
+          "category": "appetizers",
+          "dietary": ["vegetarian"],
+          "featured": true
+        },
+        {
+          "name": "Roasted Beet Salad",
+          "description": "Golden and red beets, goat cheese, arugula, candied walnuts",
+          "price": 14,
+          "category": "appetizers",
+          "dietary": ["vegetarian", "gluten-free"]
+        },
+        {
+          "name": "Crispy Calamari",
+          "description": "Lightly breaded squid, lemon aioli, spicy marinara sauce",
+          "price": 16,
+          "category": "appetizers",
+          "dietary": []
+        },
+        {
+          "name": "Tuna Tartare",
+          "description": "Fresh ahi tuna, avocado, wasabi aioli, wonton crisps",
+          "price": 19,
+          "category": "appetizers",
+          "featured": true
+        },
+        {
+          "name": "Wild Mushroom Bruschetta",
+          "description": "Sautéed forest mushrooms, garlic, herbs, truffle oil, grilled sourdough",
+          "price": 15,
+          "category": "appetizers",
+          "dietary": ["vegetarian"]
+        },
+        {
+          "name": "Grilled Spanish Octopus",
+          "description": "Smoked paprika, fingerling potatoes, charred lemon, olive oil",
+          "price": 20,
+          "category": "appetizers",
+          "dietary": ["gluten-free"]
+        }
+      ]
+    },
+    {
+      "name": "Entrees",
+      "items": [
+        {
+          "name": "Pan-Seared Duck Breast",
+          "description": "Cherry gastrique, wild mushroom risotto, seasonal vegetables",
+          "price": 36,
+          "category": "entrees",
+          "featured": true
+        },
+        {
+          "name": "Herb-Crusted Salmon",
+          "description": "Lemon beurre blanc, fingerling potatoes, asparagus",
+          "price": 32,
+          "category": "entrees",
+          "dietary": ["gluten-free"]
+        },
+        {
+          "name": "Wagyu Beef Tenderloin",
+          "description": "8oz filet, truffle butter, roasted garlic mashed potatoes, grilled asparagus",
+          "price": 52,
+          "category": "entrees",
+          "dietary": ["gluten-free"],
+          "featured": true
+        },
+        {
+          "name": "Rack of Lamb",
+          "description": "Herb-crusted New Zealand lamb, mint pesto, couscous, baby vegetables",
+          "price": 42,
+          "category": "entrees"
+        },
+        {
+          "name": "Wild Mushroom Risotto",
+          "description": "Arborio rice, mixed forest mushrooms, parmesan, white truffle oil",
+          "price": 28,
+          "category": "entrees",
+          "dietary": ["vegetarian", "gluten-free"]
+        },
+        {
+          "name": "Seafood Cioppino",
+          "description": "Mussels, shrimp, fish, calamari in spicy tomato broth, grilled bread",
+          "price": 38,
+          "category": "entrees"
+        },
+        {
+          "name": "Roasted Chicken",
+          "description": "Free-range chicken, herb jus, root vegetables, potato puree",
+          "price": 32,
+          "category": "entrees",
+          "dietary": ["gluten-free"]
+        },
+        {
+          "name": "Vegetable Wellington",
+          "description": "Roasted vegetables, mushroom duxelles, puff pastry, red pepper coulis",
+          "price": 29,
+          "category": "entrees",
+          "dietary": ["vegetarian"]
+        }
+      ]
+    },
+    {
+      "name": "Desserts",
+      "items": [
+        {
+          "name": "Dark Chocolate Soufflé",
+          "description": "Vanilla bean ice cream, raspberry coulis",
+          "price": 12,
+          "category": "desserts",
+          "dietary": ["vegetarian"],
+          "featured": true
+        },
+        {
+          "name": "Crème Brûlée",
+          "description": "Tahitian vanilla bean custard, caramelized sugar",
+          "price": 11,
+          "category": "desserts",
+          "dietary": ["vegetarian", "gluten-free"]
+        },
+        {
+          "name": "Apple Tarte Tatin",
+          "description": "Caramelized apples, puff pastry, vanilla ice cream, salted caramel",
+          "price": 13,
+          "category": "desserts",
+          "dietary": ["vegetarian"]
+        },
+        {
+          "name": "Tiramisu",
+          "description": "Coffee-soaked ladyfingers, mascarpone cream, cocoa dust",
+          "price": 12,
+          "category": "desserts",
+          "dietary": ["vegetarian"]
+        }
+      ]
+    },
+    {
+      "name": "Cocktails",
+      "items": [
+        {
+          "name": "Craft Cocktail",
+          "description": "House-made seasonal cocktail",
+          "price": 14,
+          "category": "cocktails"
+        },
+        {
+          "name": "Smoky Old Fashioned",
+          "description": "Bourbon, maple syrup, bitters, applewood smoke",
+          "price": 16,
+          "category": "cocktails"
+        },
+        {
+          "name": "Lavender 75",
+          "description": "Gin, lavender syrup, fresh lemon, prosecco",
+          "price": 15,
+          "category": "cocktails"
+        },
+        {
+          "name": "Spiced Pear Mule",
+          "description": "Vodka, pear purée, ginger beer, cinnamon",
+          "price": 14,
+          "category": "cocktails"
+        },
+        {
+          "name": "Blood Orange Margarita",
+          "description": "Tequila, blood orange, lime, agave, salt rim",
+          "price": 15,
+          "category": "cocktails"
+        },
+        {
+          "name": "Elderflower Spritz",
+          "description": "St. Germain, prosecco, soda, fresh mint",
+          "price": 13,
+          "category": "cocktails"
+        },
+        {
+          "name": "Blackberry Bramble",
+          "description": "Gin, blackberry liqueur, lemon, fresh berries",
+          "price": 15,
+          "category": "cocktails"
+        }
+      ]
+    },
+    {
+      "name": "Happy Hour",
+      "items": [
+        {
+          "name": "Bruschetta Trio",
+          "description": "Classic tomato & basil, mushroom & truffle, olive tapenade",
+          "price": 8,
+          "category": "happy-hour",
+          "dietary": ["vegetarian"]
+        },
+        {
+          "name": "Arancini",
+          "description": "Crispy risotto balls filled with mozzarella and peas",
+          "price": 7,
+          "category": "happy-hour",
+          "dietary": ["vegetarian"]
+        },
+        {
+          "name": "House Wine",
+          "description": "Selected red or white Italian wines",
+          "price": 6,
+          "category": "happy-hour"
+        },
+        {
+          "name": "Aperol Spritz",
+          "description": "Classic Italian aperitif with prosecco and soda",
+          "price": 8,
+          "category": "happy-hour"
+        },
+        {
+          "name": "Antipasto Board",
+          "description": "Selection of cured meats, cheeses, and marinated vegetables",
+          "price": 12,
+          "category": "happy-hour"
+        }
+      ]
+    }
+  ]
+} 

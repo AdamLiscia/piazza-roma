@@ -1,0 +1,16 @@
+restaurant-template/
+├── index.html
+├── pages/
+│   ├── story.html
+│   ├── menu.html
+│   ├── contact.html
+│   ├── reservations.html
+│   └── events.html
+├── css/
+│   └── custom.css
+├── js/
+│   ├── menu.js
+│   └── main.js
+├── data/
+│   └── menu.json
+└── README.md 
