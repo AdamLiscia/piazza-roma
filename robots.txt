@@ -13,4 +13,4 @@ Disallow: /private/
 Disallow: /*.tmp$
 
 # Sitemap location
-Sitemap: https://piazzaroma.com/sitemap.xml 
+Sitemap: https://adamliscia.com/sitemap.xml 

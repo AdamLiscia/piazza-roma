@@ -9,25 +9,25 @@
 
     <!-- Main Pages -->
     <url>
-        <loc>https://adamliscia.com/pages/menu.html</loc>
+        <loc>https://adamliscia.com/pages/menu</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://adamliscia.com/pages/reservations.html</loc>
+        <loc>https://adamliscia.com/pages/reservations</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://adamliscia.com/pages/story.html</loc>
+        <loc>https://adamliscia.com/pages/story</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://adamliscia.com/pages/events.html</loc>
+        <loc>https://adamliscia.com/pages/events</loc>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>

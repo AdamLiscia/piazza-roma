@@ -1,11 +1,11 @@
 restaurant-template/
-├── index.html
+├── index
 ├── pages/
-│   ├── story.html
-│   ├── menu.html
-│   ├── contact.html
-│   ├── reservations.html
-│   └── events.html
+│   ├── story
+│   ├── menu
+│   ├── contact
+│   ├── reservations
+│   └── events
 ├── css/
 │   └── custom.css
 ├── js/
