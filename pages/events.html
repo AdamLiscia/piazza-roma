@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events - Piazza Roma</title>
-    <meta name="description" content="Host your special event at Piazza Roma. From intimate gatherings to corporate events, we offer customizable private dining experiences with authentic Italian cuisine in [City].">
+    <title>Private Events & Special Occasions | Italian Fine Dining | Piazza Roma</title>
+    <meta name="description" content="Host your next private event at Piazza Roma. Featuring intimate wine room (8-12 guests) and garden room (40+ guests). Perfect for corporate events, weddings, and special occasions with authentic Italian cuisine in [City].">
+    
+    <!-- Additional meta tags -->
+    <meta name="keywords" content="private dining [City], Italian restaurant events, corporate events, wedding venue, wine tasting events, private party venue, Italian catering">
+    <meta property="og:title" content="Private Events & Special Occasions | Piazza Roma">
+    <meta property="og:description" content="Host your next private event at Piazza Roma. Featuring intimate wine room and garden room for special occasions.">
+    <meta property="og:type" content="website">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,6 +20,57 @@
     </script>
     <link href="../css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Piazza Roma",
+      "image": "../images/spaces/wine-room.jpg",
+      "description": "Authentic Italian fine dining restaurant offering private event spaces and special occasions venue",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Private Event Spaces",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "The Wine Room",
+              "description": "Intimate private dining space with wine collection backdrop"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "The Garden Room",
+              "description": "Spacious event venue with garden views"
+            }
+          }
+        ]
+      },
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Wine Tasting Evening",
+          "startDate": "2023-12-15",
+          "price": "85",
+          "priceCurrency": "USD",
+          "description": "Wine tasting event with sommelier and seasonal canapés"
+        },
+        {
+          "@type": "Event",
+          "name": "Chef's Table Experience",
+          "startDate": "2023-12-22",
+          "price": "150",
+          "priceCurrency": "USD",
+          "description": "Intimate dining experience with executive chef"
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-cream text-charcoal">
     <!-- Header placeholder -->
@@ -34,7 +91,7 @@
             </div>
             <div class="grid lg:grid-cols-2 gap-8">
                 <div class="relative group overflow-hidden rounded-lg">
-                    <img src="../images/spaces/wine-room.jpg" alt="Wine Room" class="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105">
+                    <img src="../images/spaces/wine-room.jpg" alt="Elegant private wine room at Piazza Roma featuring intimate dining space surrounded by premium wine collections" class="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105">
                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/90 to-transparent p-6">
                         <h3 class="text-2xl font-serif text-white mb-2">The Wine Room</h3>
                         <p class="text-gray-200 mb-4">An intimate space surrounded by our curated wine collection.</p>
@@ -48,7 +105,7 @@
                 </div>
                 
                 <div class="relative group overflow-hidden rounded-lg">
-                    <img src="../images/spaces/garden-room.jpg" alt="Garden Room" class="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105">
+                    <img src="../images/spaces/garden-room.jpg" alt="Spacious garden room venue with natural lighting and elegant table settings for private events and celebrations" class="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105">
                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/90 to-transparent p-6">
                         <h3 class="text-2xl font-serif text-white mb-2">The Garden Room</h3>
                         <p class="text-gray-200 mb-4">A bright, airy space with garden views.</p>
@@ -71,7 +128,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Wine Tasting Event -->
                 <article class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:-translate-y-1">
-                    <img src="../images/events/wine-tasting.jpg" alt="Wine Tasting Event" class="w-full h-48 object-cover">
+                    <img src="../images/events/wine-tasting.jpg" alt="Sommelier-led wine tasting experience with premium Italian wines and carefully paired appetizers" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-serif">Wine Tasting Evening</h3>
@@ -87,7 +144,7 @@
 
                 <!-- Chef's Table -->
                 <article class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:-translate-y-1">
-                    <img src="../images/events/chefs-table.jpg" alt="Chef's Table Experience" class="w-full h-48 object-cover">
+                    <img src="../images/events/chefs-table.jpg" alt="Exclusive chef's table dining experience featuring gourmet Italian cuisine preparation" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-serif">Chef's Table Experience</h3>
@@ -103,7 +160,7 @@
 
                 <!-- Holiday Special -->
                 <article class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:-translate-y-1">
-                    <img src="../images/events/holiday-dining.jpg" alt="Holiday Special" class="w-full h-48 object-cover">
+                    <img src="../images/events/holiday-dining.jpg" alt="Festive holiday dining setup with traditional Italian Christmas decorations and special menu" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-serif">Holiday Special Dinner</h3>
@@ -131,10 +188,10 @@
                 
                 <form class="grid gap-6 bg-cream p-8 rounded-lg shadow-sm">
                     <div class="grid md:grid-cols-2 gap-6">
-                        <input type="text" placeholder="Your Name" class="form-input w-full border border-gray-200 rounded-md p-2" required>
-                        <input type="email" placeholder="Email Address" class="form-input w-full border border-gray-200 rounded-md p-2" required>
-                        <input type="tel" placeholder="Phone Number" class="form-input w-full border border-gray-200 rounded-md p-2">
-                        <select class="form-input w-full border border-gray-200 rounded-md p-2">
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="form-input w-full border border-gray-200 rounded-md p-2" required>
+                        <input type="email" id="email" name="email" placeholder="Email Address" class="form-input w-full border border-gray-200 rounded-md p-2" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="form-input w-full border border-gray-200 rounded-md p-2">
+                        <select id="eventType" name="eventType" class="form-input w-full border border-gray-200 rounded-md p-2">
                             <option value="">Event Type</option>
                             <option value="corporate">Corporate Event</option>
                             <option value="birthday">Birthday Celebration</option>
@@ -143,10 +200,10 @@
                         </select>
                     </div>
                     <div class="grid md:grid-cols-2 gap-6">
-                        <input type="date" class="form-input w-full border border-gray-200 rounded-md p-2" required>
-                        <input type="number" placeholder="Number of Guests" class="form-input w-full border border-gray-200 rounded-md p-2" required>
+                        <input type="date" id="eventDate" name="eventDate" class="form-input w-full border border-gray-200 rounded-md p-2" required>
+                        <input type="number" id="guestCount" name="guestCount" placeholder="Number of Guests" class="form-input w-full border border-gray-200 rounded-md p-2" required>
                     </div>
-                    <textarea placeholder="Additional Details" rows="4" class="form-input w-full border border-gray-200 rounded-md p-2 bg-white"></textarea>
+                    <textarea id="details" name="details" placeholder="Additional Details" rows="4" class="form-input w-full border border-gray-200 rounded-md p-2 bg-white"></textarea>
                     <button type="submit" class="bg-terra hover:bg-terra/90 text-white font-medium py-3 px-6 rounded-md transition-colors justify-self-center">
                         Submit Inquiry
                     </button>

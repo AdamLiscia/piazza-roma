@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Piazza Roma</title>
     <meta name="description" content="Explore our carefully curated Italian menu featuring fresh, locally-sourced ingredients. From antipasti to dolci, experience authentic Italian cuisine at Piazza Roma.">
+    <meta name="keywords" content="Italian restaurant, authentic Italian cuisine, pasta, pizza, fine dining, Italian menu, wine list, antipasti, dolci, Italian desserts, fresh pasta, seafood, risotto, Italian wines, restaurant reservations">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Italian Menu - Piazza Roma Restaurant">
+    <meta property="og:description" content="Explore our carefully curated Italian menu featuring fresh, locally-sourced ingredients. From antipasti to dolci, experience authentic Italian cuisine at Piazza Roma.">
+    <meta property="og:type" content="restaurant.menu">
+    <meta property="og:url" content="https://piazzaroma.com/menu">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,6 +20,42 @@
     </script>
     <link href="../css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Piazza Roma",
+      "image": "https://adamliscia.com/images/restaurant.jpg",
+      "servesCuisine": "Italian",
+      "priceRange": "$$",
+      "menu": "https://adamlisica.com/menu",
+      "acceptsReservations": "Yes",
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Piazza Roma Menu",
+        "description": "Authentic Italian cuisine featuring locally-sourced ingredients",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Antipasti",
+            "description": "Italian appetizers"
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Primi & Secondi",
+            "description": "Pasta, main courses and entrees"
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Dolci",
+            "description": "Italian desserts"
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 <body class="bg-cream text-charcoal">
     <!-- Header placeholder -->
@@ -82,6 +124,22 @@
             </div>
         </div>
     </main>
+
+    <!-- Add before the footer -->
+    <section class="bg-terra text-cream py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif mb-6">Join Us for an Authentic Italian Experience</h2>
+            <p class="text-lg mb-8">Reserve your table today and savor the flavors of Italy</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/reservations" class="bg-cream text-terra px-8 py-3 rounded-md font-semibold hover:bg-white transition-colors">
+                    Make a Reservation
+                </a>
+                <a href="tel:+1234567890" class="border-2 border-cream text-cream px-8 py-3 rounded-md font-semibold hover:bg-cream hover:text-terra transition-colors">
+                    Call Us: (123) 456-7890
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer placeholder -->
     <div id="footer"></div>

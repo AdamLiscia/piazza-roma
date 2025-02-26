@@ -3,8 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservations - Piazza Roma</title>
-    <meta name="description" content="Book your table at Piazza Roma. Experience authentic Italian dining in [City]. Easy online reservations through Resy.">
+    <title>Reserve a Table at Piazza Roma - Authentic Italian Dining Experience</title>
+    <meta name="description" content="Make a reservation at Piazza Roma. Experience authentic Italian dining in an elegant atmosphere. Easy online booking available or call (555) 123-4567 for assistance.">
+    <meta name="keywords" content="Italian restaurant reservations, book Italian restaurant, Italian dining reservations, fine dining reservations, Piazza Roma booking, Italian restaurant table booking">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Reserve a Table at Piazza Roma - Italian Restaurant">
+    <meta property="og:description" content="Book your authentic Italian dining experience at Piazza Roma. Online reservations available or call (555) 123-4567.">
+    <meta property="og:type" content="restaurant.reservation">
+    <meta property="og:url" content="https://piazzaroma.com/reservations">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Piazza Roma",
+      "image": "https://adamliscia.com/images/restaurant.jpg",
+      "servesCuisine": "Italian",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3129 E Main St",
+        "addressLocality": "Mohegan Lake",
+        "addressRegion": "NY",
+        "postalCode": "10547",
+        "addressCountry": "US"
+      },
+      "telephone": "(555) 123-4567",
+      "email": "reservations@restaurant.com",
+      "acceptsReservations": "Yes",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "17:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "17:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "16:00",
+          "closes": "21:00"
+        }
+      ]
+    }
+    </script>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>

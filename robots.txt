@@ -1,0 +1,16 @@
+# robots.txt for Piazza Roma Restaurant
+
+User-agent: *
+Allow: /
+Allow: /pages/
+Allow: /images/
+
+# Prevent crawling of any private or admin areas
+Disallow: /admin/
+Disallow: /private/
+
+# Prevent crawling of any temporary files
+Disallow: /*.tmp$
+
+# Sitemap location
+Sitemap: https://piazzaroma.com/sitemap.xml 

@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piazza Roma</title>
-    <meta name="description" content="Experience authentic Italian dining at Piazza Roma. Fresh, locally-sourced ingredients crafted into extraordinary Italian dishes. Make your reservation today.">
+    <title>Piazza Roma | Authentic Italian Restaurant in Mohegan Lake, NY</title>
+    <meta name="description" content="Experience authentic Italian cuisine at Piazza Roma in Mohegan Lake, NY. Featuring homemade pasta, wood-fired pizza, and fine Italian wines. Reserve your table today.">
     
     <!-- SEO Tags -->
-    <meta name="keywords" content="Italian restaurant [city], best Italian dining [city], authentic Italian cuisine, fine dining Italian">
+    <meta name="keywords" content="Italian restaurant Mohegan Lake, best Italian restaurant Westchester County, authentic Italian cuisine NY, homemade pasta, wood-fired pizza, Italian fine dining, wine tasting events, private dining Mohegan Lake">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta property="og:title" content="Piazza Roma | Authentic Italian Restaurant in Mohegan Lake, NY">
+    <meta property="og:description" content="Experience authentic Italian cuisine at Piazza Roma in Mohegan Lake, NY. Featuring homemade pasta, wood-fired pizza, and fine Italian wines.">
+    <meta property="og:image" content="images/restaurant-exterior.jpg">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://piazzaroma.com">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,16 +31,36 @@
       "@context": "https://schema.org",
       "@type": "Restaurant",
       "name": "Piazza Roma",
-      "image": "images/restaurant-exterior.jpg",
+      "image": [{
+        "@type": "ImageObject",
+        "url": "images/restaurant-exterior.jpg",
+        "caption": "Exterior view of Piazza Roma Italian restaurant in Mohegan Lake, featuring traditional Italian architecture and outdoor seating"
+      }],
       "servesCuisine": "Italian",
       "priceRange": "$$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Main St",
-        "addressLocality": "[City]",
-        "addressRegion": "[State]",
-        "postalCode": "12345"
-      }
+        "streetAddress": "3129 E Main St",
+        "addressLocality": "Mohegan Lake",
+        "addressRegion": "NY",
+        "postalCode": "10547",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "41.31168",
+        "longitude": "-73.86919"
+      },
+      "telephone": "YOUR_PHONE",
+      "menu": "https://piazzaroma.com/menu",
+      "acceptsReservations": "True",
+      "openingHours": [
+        "Mo-Th 11:30-22:00",
+        "Fr-Sa 11:30-23:00",
+        "Su 12:00-21:00"
+      ],
+      "servesCuisine": ["Italian", "Mediterranean"],
+      "paymentAccepted": ["Cash", "Credit Card"]
     }
     </script>
 </head>
