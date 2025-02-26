@@ -86,5 +86,57 @@ const highlightCurrentPage = () => {
     }
 };
 
+// Load header component
+const loadHeader = () => {
+    const headerElement = document.getElementById('header');
+    if (headerElement) {
+        fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                headerElement.innerHTML = data;
+                // Initialize any header-specific scripts after loading
+                initializeHeaderScripts();
+            })
+            .catch(error => console.error('Error loading header:', error));
+    }
+};
+
+// Load footer component
+const loadFooter = () => {
+    const footerElement = document.getElementById('footer');
+    if (footerElement) {
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                footerElement.innerHTML = data;
+                // Initialize any footer-specific scripts after loading
+                initializeFooterScripts();
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    }
+};
+
 // Initialize components when DOM is loaded
-document.addEventListener('DOMContentLoaded', loadComponents); 
+document.addEventListener('DOMContentLoaded', () => {
+    loadHeader();
+    loadFooter();
+});
+
+// Function to initialize header-specific scripts
+const initializeHeaderScripts = () => {
+    // Add any header-specific initialization here
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    if (mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu) {
+                mobileMenu.classList.toggle('hidden');
+            }
+        });
+    }
+};
+
+// Function to initialize footer-specific scripts
+const initializeFooterScripts = () => {
+    // Add any footer-specific initialization here
+}; 

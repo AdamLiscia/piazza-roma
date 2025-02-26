@@ -22,3 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Wait for DOM content to be loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Wait for components to load before initializing any main scripts
+    setTimeout(() => {
+        // Any page-specific initialization can go here
+        console.log('Page loaded');
+    }, 100); // Small delay to ensure components are loaded
+});
