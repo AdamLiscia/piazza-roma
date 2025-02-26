@@ -38,47 +38,8 @@
     </script>
 </head>
 <body class="bg-cream text-charcoal">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
-                    <a href="/" class="flex items-center">
-                        <span class="text-2xl font-serif text-terra">Harvest on Hudson</span>
-                    </a>
-                </div>
-                
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="./pages/story" class="hover:text-terra transition-colors">Our Story</a>
-                    <a href="./pages/menu" class="hover:text-terra transition-colors">Menu</a>
-                    <a href="./pages/reservations" class="hover:text-terra transition-colors">Reservations</a>
-                    <a href="./pages/events" class="hover:text-terra transition-colors">Events</a>
-                    <a href="./pages/contact" class="hover:text-terra transition-colors">Contact</a>
-                </div>
-                
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-500 hover:text-terra">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="./pages/story" class="block px-3 py-2 hover:bg-terra/10">Our Story</a>
-                <a href="./pages/menu" class="block px-3 py-2 hover:bg-terra/10">Menu</a>
-                <a href="./pages/reservations" class="block px-3 py-2 hover:bg-terra/10">Reservations</a>
-                <a href="./pages/events" class="block px-3 py-2 hover:bg-terra/10">Events</a>
-                <a href="./pages/contact" class="block px-3 py-2 hover:bg-terra/10">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Header placeholder -->
+    <div id="header"></div>
 
     <!-- Hero Section -->
     <section class="relative h-screen">
@@ -200,54 +161,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-charcoal py-12 mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-serif mb-4 text-terra">Piazza Roma</h3>
-                    <p class="text-gray-300">123 Main Street<br>[City], [State] 12345</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-serif mb-4 text-gold">Contact</h3>
-                    <p class="text-gray-300">Events Team: (555) 123-4567<br>Email: events@restaurant.com</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-serif mb-4 text-gold">Follow Us</h3>
-                    <div class="flex space-x-6">
-                        <a href="#" class="text-gray-300 hover:text-gold transition-colors" aria-label="Follow us on Instagram">
-                            <i class="fab fa-instagram text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-gold transition-colors" aria-label="Follow us on Facebook">
-                            <i class="fab fa-facebook-f text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-gold transition-colors" aria-label="Follow us on Twitter">
-                            <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
 
+    <!-- Scripts -->
+    <script src="./js/components.js"></script>
     <script src="./js/main.js"></script>
-    <script>
-        // Mobile menu toggle functionality
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        const handleMobileMenuToggle = () => {
-            mobileMenu.classList.toggle('hidden');
-        };
-
-        mobileMenuButton.addEventListener('click', handleMobileMenuToggle);
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (event) => {
-            if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
-                mobileMenu.classList.add('hidden');
-            }
-        });
-    </script>
 </body>
 </html> 

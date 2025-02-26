@@ -19,57 +19,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </head>
 <body class="bg-cream text-charcoal">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
-                    <a href="../index.html" class="flex items-center">
-                        <span class="text-2xl font-serif text-terra">Piazza Roma</span>
-                    </a>
-                </div>
-                
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="./story.html" class="hover:text-terra transition-colors">Our Story</a>
-                    <a href="./menu.html" class="hover:text-terra transition-colors">Menu</a>
-                    <a href="./reservations.html" class="hover:text-terra transition-colors">Reservations</a>
-                    <a href="./events.html" class="hover:text-terra transition-colors">Events</a>
-                    <a href="./contact.html" class="hover:text-terra transition-colors text-terra">Contact</a>
-                </div>
-                
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button 
-                        id="mobile-menu-button" 
-                        class="text-gray-500 hover:text-terra"
-                        type="button"
-                        aria-controls="mobile-menu"
-                        aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <!-- Icon when menu is closed -->
-                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                        <!-- Icon when menu is open -->
-                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile menu dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="./story.html" class="block px-3 py-2 hover:bg-terra/10 rounded-md">Our Story</a>
-                <a href="./menu.html" class="block px-3 py-2 hover:bg-terra/10 rounded-md">Menu</a>
-                <a href="./reservations.html" class="block px-3 py-2 hover:bg-terra/10 rounded-md">Reservations</a>
-                <a href="./events.html" class="block px-3 py-2 hover:bg-terra/10 rounded-md">Events</a>
-                <a href="./contact.html" class="block px-3 py-2 bg-terra/10 text-terra rounded-md">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Header placeholder -->
+    <div id="header"></div>
 
     <!-- Header -->
     <header class="pt-24 pb-12 bg-white">
@@ -199,36 +150,12 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-charcoal py-12 mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-serif mb-4 text-sienna">Piazza Roma</h3>
-                    <p class="text-gray-300">123 Main Street<br>[City], [State] 12345</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-serif mb-4 text-sienna">Contact</h3>
-                    <p class="text-gray-300">Events Team: (555) 123-4567<br>Email: events@restaurant.com</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-serif mb-4 text-sienna">Follow Us</h3>
-                    <div class="flex space-x-6">
-                        <a href="#" class="text-gray-300 hover:text-sienna transition-colors" aria-label="Follow us on Instagram">
-                            <i class="fab fa-instagram text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-sienna transition-colors" aria-label="Follow us on Facebook">
-                            <i class="fab fa-facebook-f text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-sienna transition-colors" aria-label="Follow us on Twitter">
-                            <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
 
+    <!-- Scripts -->
+    <script src="../js/components.js"></script>
+    <script src="../js/main.js"></script>
     <script>
         // Google Maps initialization
         function initMap() {
@@ -265,7 +192,6 @@
             }
         });
     </script>
-    <script src="../js/main.js"></script>
     <script>
         const handleMobileMenu = () => {
             const mobileMenuButton = document.getElementById('mobile-menu-button');
