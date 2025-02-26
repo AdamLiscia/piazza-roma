@@ -45,29 +45,38 @@ const initializeMobileMenu = async () => {
 
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
+    const menuOpenIcon = document.getElementById('menu-open-icon');
+    const menuCloseIcon = document.getElementById('menu-close-icon');
     
     if (!mobileMenuButton || !mobileMenu) return;
 
-    const menuIcons = mobileMenuButton.querySelectorAll('svg');
-    
     const toggleMenu = () => {
         const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
         mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
         mobileMenu.classList.toggle('hidden');
-        menuIcons[0].classList.toggle('hidden');
-        menuIcons[1].classList.toggle('hidden');
+        menuOpenIcon.classList.toggle('hidden');
+        menuCloseIcon.classList.toggle('hidden');
     };
 
     mobileMenuButton.addEventListener('click', toggleMenu);
 
+    // Add keyboard accessibility
+    mobileMenuButton.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleMenu();
+        }
+    });
+
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
-        if (mobileMenu.classList.contains('hidden')) return;
-        if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+        if (!mobileMenu.classList.contains('hidden') && 
+            !mobileMenuButton.contains(e.target) && 
+            !mobileMenu.contains(e.target)) {
             mobileMenu.classList.add('hidden');
             mobileMenuButton.setAttribute('aria-expanded', 'false');
-            menuIcons[0].classList.remove('hidden');
-            menuIcons[1].classList.add('hidden');
+            menuOpenIcon.classList.remove('hidden');
+            menuCloseIcon.classList.add('hidden');
         }
     });
 };
@@ -123,32 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to initialize header-specific scripts
 const initializeHeaderScripts = () => {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileMenuClose = document.getElementById('mobile-menu-close');
-
-    if (mobileMenuButton && mobileMenu) {
-        const toggleMenu = () => {
-            const isOpen = mobileMenu.classList.contains('translate-x-0');
-            mobileMenu.classList.toggle('translate-x-0', !isOpen);
-            mobileMenu.classList.toggle('translate-x-full', isOpen);
-        };
-
-        mobileMenuButton.addEventListener('click', toggleMenu);
-        
-        if (mobileMenuClose) {
-            mobileMenuClose.addEventListener('click', toggleMenu);
-        }
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (mobileMenu.classList.contains('translate-x-0') && 
-                !mobileMenu.contains(e.target) && 
-                !mobileMenuButton.contains(e.target)) {
-                toggleMenu();
-            }
-        });
-    }
+    // Initialize mobile menu
+    initializeMobileMenu();
 };
 
 // Function to initialize footer-specific scripts
