@@ -76,7 +76,7 @@ const initializeMobileMenu = async () => {
 const highlightCurrentPage = () => {
     try {
         const currentPath = window.location.pathname;
-        const page = currentPath.split('/').pop().replace('.html', '') || 'home';
+        const page = currentPath.split('/').pop().replace('.html', '') || 'index';
         
         document.querySelectorAll(`[data-nav="${page}"]`).forEach(link => {
             link.classList.add('text-terra');
@@ -90,12 +90,12 @@ const highlightCurrentPage = () => {
 const loadHeader = () => {
     const headerElement = document.getElementById('header');
     if (headerElement) {
-        fetch('../components/header.html')
+        fetch('/components/header.html')  // Note: changed path to absolute
             .then(response => response.text())
             .then(data => {
                 headerElement.innerHTML = data;
-                // Initialize any header-specific scripts after loading
                 initializeHeaderScripts();
+                highlightCurrentPage();
             })
             .catch(error => console.error('Error loading header:', error));
     }
@@ -105,11 +105,10 @@ const loadHeader = () => {
 const loadFooter = () => {
     const footerElement = document.getElementById('footer');
     if (footerElement) {
-        fetch('../components/footer.html')
+        fetch('/components/footer.html')  // Note: changed path to absolute
             .then(response => response.text())
             .then(data => {
                 footerElement.innerHTML = data;
-                // Initialize any footer-specific scripts after loading
                 initializeFooterScripts();
             })
             .catch(error => console.error('Error loading footer:', error));
@@ -124,13 +123,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to initialize header-specific scripts
 const initializeHeaderScripts = () => {
-    // Add any header-specific initialization here
     const mobileMenuButton = document.getElementById('mobile-menu-button');
-    if (mobileMenuButton) {
-        mobileMenuButton.addEventListener('click', () => {
-            const mobileMenu = document.getElementById('mobile-menu');
-            if (mobileMenu) {
-                mobileMenu.classList.toggle('hidden');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+    if (mobileMenuButton && mobileMenu) {
+        const toggleMenu = () => {
+            const isOpen = mobileMenu.classList.contains('translate-x-0');
+            mobileMenu.classList.toggle('translate-x-0', !isOpen);
+            mobileMenu.classList.toggle('translate-x-full', isOpen);
+        };
+
+        mobileMenuButton.addEventListener('click', toggleMenu);
+        
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener('click', toggleMenu);
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (mobileMenu.classList.contains('translate-x-0') && 
+                !mobileMenu.contains(e.target) && 
+                !mobileMenuButton.contains(e.target)) {
+                toggleMenu();
             }
         });
     }

@@ -2,52 +2,38 @@
 <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
-            <div class="flex">
-                <a href="index.html" class="flex items-center">
-                    <span class="text-2xl font-serif text-terra">Piazza Roma</span>
-                </a>
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+                <a href="/" class="text-2xl font-serif text-terra">Piazza Roma</a>
             </div>
             
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-8">
-                <a href="pages/story.html" class="hover:text-terra transition-colors" data-nav="story">Our Story</a>
-                <a href="pages/menu.html" class="hover:text-terra transition-colors" data-nav="menu">Menu</a>
-                <a href="pages/reservations.html" class="hover:text-terra transition-colors" data-nav="reservations">Reservations</a>
-                <a href="pages/events.html" class="hover:text-terra transition-colors" data-nav="events">Events</a>
-                <a href="pages/contact.html" class="hover:text-terra transition-colors" data-nav="contact">Contact</a>
+                <a href="/" data-nav="index" class="text-charcoal hover:text-terra">Home</a>
+                <a href="/pages/menu.html" data-nav="menu" class="text-charcoal hover:text-terra">Menu</a>
+                <a href="/pages/story.html" data-nav="story" class="text-charcoal hover:text-terra">Our Story</a>
+                <a href="/pages/reservations.html" data-nav="reservations" class="text-charcoal hover:text-terra">Reservations</a>
             </div>
             
             <!-- Mobile menu button -->
             <div class="md:hidden flex items-center">
-                <button 
-                    id="mobile-menu-button" 
-                    class="text-gray-500 hover:text-terra"
-                    type="button"
-                    aria-controls="mobile-menu"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation menu">
+                <button id="mobile-menu-button" type="button" class="text-charcoal hover:text-terra">
                     <span class="sr-only">Open main menu</span>
-                    <!-- Icon when menu is closed -->
-                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                    <!-- Icon when menu is open -->
-                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- Mobile Navigation -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1">
-            <a href="pages/story.html" class="block px-3 py-2 hover:bg-terra/10" data-nav="story">Our Story</a>
-            <a href="pages/menu.html" class="block px-3 py-2 hover:bg-terra/10" data-nav="menu">Menu</a>
-            <a href="pages/reservations.html" class="block px-3 py-2 hover:bg-terra/10" data-nav="reservations">Reservations</a>
-            <a href="pages/events.html" class="block px-3 py-2 hover:bg-terra/10" data-nav="events">Events</a>
-            <a href="pages/contact.html" class="block px-3 py-2 hover:bg-terra/10" data-nav="contact">Contact</a>
+            <a href="/" data-nav="index" class="block px-3 py-2 text-charcoal hover:text-terra">Home</a>
+            <a href="/pages/menu.html" data-nav="menu" class="block px-3 py-2 text-charcoal hover:text-terra">Menu</a>
+            <a href="/pages/story.html" data-nav="story" class="block px-3 py-2 text-charcoal hover:text-terra">Our Story</a>
+            <a href="/pages/reservations.html" data-nav="reservations" class="block px-3 py-2 text-charcoal hover:text-terra">Reservations</a>
         </div>
     </div>
 </nav> 
