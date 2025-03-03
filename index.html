@@ -16,24 +16,14 @@
     <meta property="og:type" content="restaurant">
     <meta property="og:url" content="https://adamliscia.com">
     
-    <!-- Preload critical assets -->
-    <link rel="preload" as="image" href="images/hero-image.jpg">
-    <link rel="preload" as="font" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2" crossorigin>
-    
-    <!-- Defer non-critical CSS -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-    
     <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/colors.js"></script>
     <script>
-        // Configure Tailwind before loading it
-        tailwind = {
-            config: window.tailwindConfig
-        };
+        tailwind.config = window.tailwindConfig;
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="./css/custom.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="./css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Schema.org markup -->
     <script type="application/ld+json">
@@ -86,14 +76,7 @@
     <!-- Hero Section -->
     <section class="relative h-screen">
         <div class="absolute inset-0">
-            <img 
-                src="images/hero-image.jpg" 
-                alt="Restaurant ambiance" 
-                class="w-full h-full object-cover"
-                loading="eager"
-                decoding="async"
-                fetchpriority="high"
-            >
+            <img src="images/hero-image.jpg" alt="Restaurant ambiance" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
         
@@ -123,13 +106,7 @@
                     </div>
                 </div>
                 <div class="relative h-96">
-                    <img 
-                        src="images/featured-dish.jpg" 
-                        alt="Signature dish" 
-                        class="w-full h-full object-cover rounded-lg"
-                        loading="lazy"
-                        decoding="async"
-                    >
+                    <img src="images/featured-dish.jpg" alt="Signature dish" class="w-full h-full object-cover rounded-lg">
                 </div>
             </div>
         </div>
@@ -228,8 +205,8 @@
     <!-- Footer placeholder -->
     <div id="footer"></div>
 
-    <!-- Move scripts to end of body -->
-    <script src="./js/components.js" defer></script>
-    <script src="./js/main.js" defer></script>
+    <!-- Scripts -->
+    <script src="./js/components.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html> 
