@@ -1,6 +1,6 @@
 // Define the color palette
 const colors = {
-    terra: '#CD4F38',     // Terracotta red
+    terra: '#6B2758',     // Terracotta red
     olive: '#556B2F',     // Deep olive green
     cream: '#FFF8E7',     // Warm cream
     sienna: '#8B4513',    // Sienna brown
