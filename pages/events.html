@@ -28,7 +28,16 @@
       "@type": "Restaurant",
       "name": "Piazza Roma",
       "image": "../images/spaces/wine-room.jpg",
+      "url": "https://adamliscia.com",
       "description": "Authentic Italian fine dining restaurant offering private event spaces and special occasions venue",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3129 E Main St",
+        "addressLocality": "Mohegan Lake",
+        "addressRegion": "NY",
+        "postalCode": "10547",
+        "addressCountry": "US"
+      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Private Event Spaces",
@@ -38,7 +47,11 @@
             "itemOffered": {
               "@type": "Service",
               "name": "The Wine Room",
-              "description": "Intimate private dining space with wine collection backdrop"
+              "description": "Intimate private dining space with wine collection backdrop",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock"
+              }
             }
           },
           {
@@ -46,7 +59,11 @@
             "itemOffered": {
               "@type": "Service",
               "name": "The Garden Room",
-              "description": "Spacious event venue with garden views"
+              "description": "Spacious event venue with garden views",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock"
+              }
             }
           }
         ]
@@ -55,10 +72,13 @@
         {
           "@type": "Event",
           "name": "Wine Tasting Evening",
-          "startDate": "2023-12-15",
+          "startDate": "2023-12-15T19:00",
+          "endDate": "2023-12-15T22:00",
           "description": "Wine tasting event with sommelier and seasonal canapés",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "location": {
-            "@type": "Restaurant",
+            "@type": "Place",
             "name": "Piazza Roma",
             "address": {
               "@type": "PostalAddress",
@@ -72,16 +92,21 @@
           "offers": {
             "@type": "Offer",
             "price": "85",
-            "priceCurrency": "USD"
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2023-11-15"
           }
         },
         {
           "@type": "Event",
           "name": "Chef's Table Experience",
-          "startDate": "2023-12-22",
+          "startDate": "2023-12-22T18:30",
+          "endDate": "2023-12-22T22:30",
           "description": "Intimate dining experience with executive chef",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "location": {
-            "@type": "Restaurant",
+            "@type": "Place",
             "name": "Piazza Roma",
             "address": {
               "@type": "PostalAddress",
@@ -95,7 +120,9 @@
           "offers": {
             "@type": "Offer",
             "price": "150",
-            "priceCurrency": "USD"
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2023-11-22"
           }
         }
       ]
