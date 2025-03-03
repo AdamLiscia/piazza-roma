@@ -1,10 +1,10 @@
 // Define the color palette
 const colors = {
     terra: '#6B2758',     // Terracotta red
-    olive: '#556B2F',     // Deep olive green
-    cream: '#FFF8E7',     // Warm cream
+    gold: '#D4AF37',
+    cream: '#FDFBF7',     // Warm cream
     sienna: '#8B4513',    // Sienna brown
-    charcoal: '#36454F',  // Keeping charcoal for contrast
+    charcoal: '#2D2D2D',  // Keeping charcoal for contrast
 };
 
 // Export the colors for Tailwind configuration
